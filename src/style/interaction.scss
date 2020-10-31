@@ -1,0 +1,18 @@
+@for $i from -200 through 200 {
+  [active]:active {
+    [active-x="#{$i}"] {
+      --x: #{$i/10}rem;
+    }
+    [active-y="#{$i}"] {
+      --y: #{$i/10}rem;
+    }
+  }
+  [hover]:hover {
+    [hover-x="#{$i}"] {
+      --x: #{$i/10}rem;
+    }
+    [hover-y="#{$i}"] {
+      --y: #{$i/10}rem;
+    }
+  }
+}

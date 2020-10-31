@@ -1,0 +1,9 @@
+* {
+  transition: inherit;
+}
+
+@for $i from 0 through 100 {
+  [transition="#{$i}"] {
+    transition: all #{$i / 10}s;
+  }
+}
